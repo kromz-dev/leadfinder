@@ -1,0 +1,13 @@
+# Crawling. Pulls in playwright (>=1.49) as a transitive dependency; the
+# browser binaries still need `crawl4ai-setup` after install, see README.
+crawl4ai==0.9.3
+
+# LLM cascade. crawl4ai pins this fork, which is what provides the `litellm`
+# module imported in scraper.py. Do NOT replace it with the upstream `litellm`
+# package: the two conflict.
+unclecode-litellm==1.81.13
+
+# Notion REST calls, config loading, schema validation.
+requests==2.34.2
+python-dotenv==1.0.1
+pydantic==2.13.5

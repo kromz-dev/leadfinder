@@ -1,0 +1,6 @@
+.env
+__pycache__/
+*.csv
+!leads.sample.csv
+venv/
+.venv/
